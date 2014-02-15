@@ -1,0 +1,164 @@
+// @group Reset
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+ul, ol {
+  list-style: none;
+}
+img {
+  vertical-align: middle;
+}
+// @end
+
+
+// @group Fluid Image
+img {
+  max-width: 100%;
+}
+// @end
+
+
+// @group HTML
+html {
+  font-family: verdana, sans-serif;
+  line-height: 1.5
+}
+// @end
+
+
+// @group Heading
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 24px;
+}
+h1 {
+  font-size: 48px;
+}
+h2 {
+  font-size: 36px;
+  line-height: 1.3333;
+}
+h3 {
+  font-size: 24px;
+  line-height: 1;
+}
+h4, h5, h6 {
+  font-size: 16px;
+  line-height: 1.5;
+}
+// @end
+
+
+// @group Header
+header {
+  padding-top: 24px;
+  text-align: center;
+  h1 {
+    margin-bottom: 24px;
+    img {
+      height: 120px;
+      width: 120px;
+    }
+  }
+  h2 {
+    color: #271607;
+  }
+}
+// @end
+
+
+// @group Nav
+nav {
+  background-color: #f1cdac;
+  margin-bottom: 24px;
+  ul {
+    overflow: hidden;
+    li {
+      float: left;
+      width: 25%;
+      a {
+        color: #5c3410;
+        display: block;
+        padding: 12px 0;
+        &:hover {
+          color: #271607;
+        }
+      }
+      &:hover {
+        background-color: #e57000;
+      }
+    }
+  }
+}
+// @end
+
+
+// @group Footer
+footer {
+  background-color: #f1cdac;
+  color: #5c3410;
+  padding: 24px 0;
+  text-align: center;
+}
+// @end
+
+
+// @group Contents
+#contents {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  p {
+    margin-bottom: 24px;
+    text-align: left;
+  }
+  img {
+    margin-bottom: 24px;
+    box-shadow: 0 0 5px #2f1f1f;
+    width: 100%;
+  }
+  ul {
+    margin-bottom: 24px;
+  }
+}
+// @end
+
+// @group > 768px
+@media screen and (min-width: 768px) {
+  #contents {
+    text-align: left;
+  }
+}
+// @end
+
+
+// @group > 1024px
+@media screen and (min-width: 768px) {
+  #contents {
+    overflow: hidden;
+    text-align: left;
+    width: 93.75%;
+    #main, #sub {
+      float: left;
+      margin: 0 1.0416667%;
+    }
+    #main {
+      width: 64.5833333%;
+    }
+    #sub {
+      width: 31.25%;
+    }
+  }
+  nav ul {
+    margin: 0 auto;
+    width: 93.75%;
+  }
+  footer {
+    margin: 0 auto;
+    width: 91.796875%;
+  }
+}
+// @end
